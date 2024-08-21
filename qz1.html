@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Quiz App</title>
+  <link rel="stylesheet" href="qz2.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Simple Quiz App</h1>
+    <div id="quiz">
+      <div id="question">Question will appear here</div>
+      <div class="options">
+        <button class="option-btn" id="option1" onclick="selectOption(0)">Option 1</button>
+        <button class="option-btn" id="option2" onclick="selectOption(1)">Option 2</button>
+        <button class="option-btn" id="option3" onclick="selectOption(2)">Option 3</button>
+        <button class="option-btn" id="option4" onclick="selectOption(3)">Option 4</button>
+      </div>
+      <button id="next-btn" onclick="nextQuestion()">Next Question</button>
+    </div>
+    <div id="result" class="hidden">
+      <h2>Your Score: <span id="score"></span></h2>
+      <button onclick="restartQuiz()">Restart Quiz</button>
+    </div>
+  </div>
+  <script src="qz3.js"></script>
+</body>
+</html>
